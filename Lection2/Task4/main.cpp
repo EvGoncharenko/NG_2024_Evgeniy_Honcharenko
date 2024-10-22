@@ -12,12 +12,8 @@ int main()
     cout << "Your string: " << str << endl;
 
     int character = 0;
-    for (int element = 0; element < str[element] != 0; element++) {
-        if(str[element] == ' '){
-            continue;
-        }else{
-            character++;
-        }
+    while(str[character] != 0){
+        character++;
     }
 
     cout << "Elements: " << character << endl;
