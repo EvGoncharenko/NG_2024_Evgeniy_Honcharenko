@@ -18,8 +18,6 @@ int main()
     for (int output: set_number) {
         if (output == set_number[0]){
             cout << set_number[0];
-        } else if (output == set_number[4]) {
-            cout << ", " << output << ".";
         }else{
             cout << ", " << output;
         }
