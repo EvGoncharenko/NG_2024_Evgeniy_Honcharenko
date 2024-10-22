@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int set_numbers[20] {0};
-    int numbers, max_number = 0;
+    int numbers, max_number = 0, size_picture=0;
 
     cout << "Enter some numbers or enter zero to finish entering and see the picture." << endl;
 
@@ -19,19 +19,16 @@ int main()
             break;
     }
 
-    for(int max:set_numbers){
-
-        if(max>max_number){
-            max_number=max;
+    for(int size:set_numbers){
+        if(size>max_number){
+            max_number=size;
+        }
+        if(size>0){
+            size_picture++;
         }
     }
 
-    for (int picture = 0; picture < 20; picture++) {
-
-        if(set_numbers[picture]==0){
-            continue;
-        }
-
+    for (int picture = 0; picture < size_picture; picture++) {
         for (int space = 0; space < (max_number-set_numbers[picture])/2; space++) {
             cout << " ";
         }
