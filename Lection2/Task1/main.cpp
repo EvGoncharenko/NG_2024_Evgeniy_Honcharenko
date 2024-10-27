@@ -4,13 +4,11 @@ using namespace std;
 
 int main()
 {
-    int number;
     int set_number[5];
 
     for (int position = 0; position < 5; position++) {
         cout << "Enter your number: ";
-        cin >> number;
-        set_number[position] = number;
+        cin >> set_number[position];
     }
 
     cout << "Your numbers: ";
