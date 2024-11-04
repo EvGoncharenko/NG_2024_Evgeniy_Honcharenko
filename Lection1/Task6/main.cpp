@@ -16,14 +16,16 @@ int main()
 
         system("CLS");
 
-        if(takt == 1){
+        switch (takt) {
+        case 1:
             for (int TaktOne = 0; TaktOne < size; TaktOne++) {
                 for (int Star = 0; Star < TaktOne + 1; Star++) {
                     cout << "* ";
                 }
                 cout << endl;
             }
-        }else if(takt == 2){
+            break;
+        case 2:
             for (int TaktTwo = 0; TaktTwo < size; TaktTwo++) {
                 for (int Space = 0; Space < size-TaktTwo-1; Space++) {
                     cout << "  ";
@@ -34,7 +36,8 @@ int main()
                 }
                 cout << endl;
             }
-        }else if(takt == 3){
+            break;
+        case 3:
             for (int TaktThree = 0; TaktThree < size; TaktThree++) {
                 for (int Space = 0; Space < TaktThree; Space++) {
                     cout << "  ";
@@ -45,15 +48,16 @@ int main()
                 }
                 cout << endl;
             }
-        }else if(takt == 4){
+            break;
+        case 4:
             for (int TaktFour = 0; TaktFour < size; TaktFour++) {
                 for (int Star = 0; Star < size-TaktFour; Star++) {
                     cout << "* ";
                 }
                 cout << endl;
             }
+            break;
         }
-
         Sleep(500);
 
         if(takt == 4){
