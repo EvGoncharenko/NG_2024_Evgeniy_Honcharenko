@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//Хранение матриц
+
 struct Matrices
 {
     vector<vector<int>> matrix_one;
@@ -12,7 +12,7 @@ struct Matrices
     vector<vector<int>> matrix_result;
 };
 
-//Функция для координации пользователя + подготовка размера матриц для дальнейших действий с ними
+
 pair<int,int> enter_size_matrix()
 {
     int size_matrix_one, size_matrix_two;
@@ -27,7 +27,7 @@ pair<int,int> enter_size_matrix()
     return make_pair(size_matrix_one, size_matrix_two);
 }
 
-//Функция(Шаблон) для заполнения матриц значениями
+
 void entering_value(int size_one, int size_two, vector<vector<int>>& matrices)
 {
     matrices.resize(size_one, vector<int>(size_two));
@@ -48,7 +48,7 @@ void entering_value(int size_one, int size_two, vector<vector<int>>& matrices)
     }
 }
 
-// Сумирование матриц и вывод результата
+
 void summation_matrices(int size_one, int size_two, Matrices& user_matrix)
 {
     for (int value_i = 0; value_i < size_one; value_i++) {
@@ -61,7 +61,7 @@ void summation_matrices(int size_one, int size_two, Matrices& user_matrix)
     }
 }
 
-// Вычитание матриц и вывод результата
+
 void subtraction_matrices(int size_one, int size_two, Matrices& user_matrix)
 {
     for (int value_i = 0; value_i < size_one; value_i++) {
@@ -74,7 +74,7 @@ void subtraction_matrices(int size_one, int size_two, Matrices& user_matrix)
     }
 }
 
-//Функция для подготовки матриц к математическим операциям
+
 void filling_matrices()
 {
     Matrices user_matrix;
@@ -107,7 +107,7 @@ void filling_matrices()
     }
 }
 
-//Просто функция для запуска всей этой темы
+
 int main()
 {
     filling_matrices();
